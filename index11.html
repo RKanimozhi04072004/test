@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #d3366d;
+            ;
+            margin-top:30px;
+        }
+
+        form {
+            padding: 25px;
+            background-color: #a33a5f;
+            margin: auto ;
+            color: white;
+            max-width: 400px;
+        }
+        .label {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .label label {
+            flex: 1;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="tel"],
+        select, textarea {
+            flex: 2;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        } */
+        #name{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+            
+        }
+        #email{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+        }
+        #password{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+        }
+        #tele{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+        }
+        #lan{
+            flex: 2;
+            width:200px;
+            border-radius: 5px;
+            padding: 6px;
+            background-color:rgb(223, 218, 218);
+            border: 1px solid black;
+        }
+        #zip{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+        }
+        #textarea{
+            flex: 2;
+            border-radius: 5px;
+            padding: 6px;
+            border: 1px solid black;
+        }
+        #gender b{
+               margin-right:70px;
+        }
+        button {
+            width: 100%;
+            padding: 9px;
+            border:1px solid grey;
+            border-radius: 4px;
+            color: #75213f;
+            font-weight: bold;
+            font-size:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer-box">
+        <form>
+            <div class="label">
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" placeholder="your name">
+            </div>
+
+            <div class="label">
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" placeholder="your email">
+            </div>
+
+            <div class="label">
+                <label for="password"><b>Password:</b></label>
+                <input type="password" id="password">
+            </div>
+
+            <div class="label">
+                <label for="pnum"><b>Phone number:</b></label>
+                <input type="tel" id="tele">
+            </div>
+
+            <div id="gender">
+                <label for="gender"><b>Gender:</b></label>
+                <label for="men">Male:</label>
+                <input type="radio" id="men">
+                <label for="women">Female:</label>
+                <input type="radio" id="women">
+                <label for="others">Others</label>
+                <input type="radio" id="others">
+            </div>
+
+            <div class="label">
+                <label for="language"><b>Language:</b></label>
+                <select id="lan">
+                    <option value="Tamilnadu">Tamil</option>
+                    <option value="Andra prades">Telugu</option>
+                    <option value="Gujarath">Marati</option>
+                    <option value="Kerala">Malayalam</option>
+    
+                </select>
+            </div>
+
+            <div class="label">
+                <label for="zip"><b>Zip Code:</b></label>
+                <input type="text"  id=zip maxlength="6">
+            </div>
+
+            <div class="label">
+                <label for="about"><b>About:</b></label>
+                <textarea id="textarea">Write about yourself...</textarea>
+            </div>
+
+            <div class="label">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
